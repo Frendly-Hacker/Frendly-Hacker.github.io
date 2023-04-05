@@ -2,6 +2,9 @@
 <html lang="pl">
 <head>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4429582198517486"
+     crossorigin="anonymous"></script>
+
 	<link rel="shortcut Icon" href="img/logo1.png" />
 
 	<meta charset="utf-8">
@@ -24,6 +27,7 @@
 	
 </head>
 	<body>
+	<div class="loader"></div>
 		<header>
 		
 		<h1 class="logo"><span style="color: #ff0000;">
@@ -31,7 +35,7 @@
 		
 		<nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
 		
-			<a class="navbar-brand" href="#"><img src="img/logo1.png" width="30" height="30" class="d-inline-block mr-1 align-bottom" alt=""></a>
+			<a class="navbar-brand" href="Gpl.html"><img src="img/logo1.png" width="30" height="30" class="d-inline-block mr-1 align-bottom" alt=""></a>
 		
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" ariaexpanded="false" aria-label="Przełącznik nawigacji">
 				<span class="navbar-toggler-icon"></span>
@@ -42,16 +46,16 @@
 				<ul class="navbar-nav mr-auto">
 				
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Srona główna</a>
+						<a class="nav-link" href="Gpl.html">Srona główna</a>
 					</li>
 					
 					<li class="nav-item">
-						<a class="nav-link" href="#">Pierwszy raz tutaj?</a>
+						<a class="nav-link" href="Pierwszy.html">Pierwszy raz tutaj?</a>
 						
 					</li>
 					
 					<li class="nav-item">
-						<a class="nav-link" href="#">Spis treści</a>
+						<a class="nav-link" href="Spis.html">Spis treści</a>
 					</li>
 					
 					<li class="nav-item dropdown">
@@ -59,7 +63,7 @@
 						
 							<div class="dropdown-menu" aria-labelledby="submenu">
 						
-							<a class="dropdown-item" href="#">Rozdział 1</a>
+							<a class="dropdown-item" href="Wpis1.html">Rozdział 1</a>
 							
 							<div class="dropdown-divider"></div>
 							
@@ -185,10 +189,10 @@
 		
 		<div class="socials">
 				<div class="socialsdivs">
-					<div class="fb"><i class="icon-facebook"></i></div>
-					<div class="yt"><i class="icon-youtube"></i></div>
-					<div class="tw"><i class="icon-twitter"></i></div>
-					<div class="gp"><i class="icon-gplus"></i></div>
+					<a href="#" target="_blank"><div class="fb"><i class="icon-facebook"></i></div></a>
+					<a href="#" target="_blank"><div class="yt"><i class="icon-youtube"></i></div></a>
+					<a href="#" target="_blank"><div class="tw"><i class="icon-twitter"></i></div></a>
+					<a href="#" target="_blank"><div class="gp"><i class="icon-gplus"></i></div></a>
 					<div style="clear:both"></div>
 			</div>
 		</div>
@@ -230,6 +234,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+	window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
 
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+</script>
 	</body>
 </html>
