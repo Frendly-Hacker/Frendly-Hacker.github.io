@@ -47,6 +47,21 @@ h1
 	color: #39a5f1;
 	margin-bottom: 20px;
 }
+.author
+{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.author a
+{
+	opacity: 0.9;
+}
+
+.author a:hover
+{
+	opacity: 1;
+}
 
 figure
 {
@@ -834,3 +849,4 @@ figcaption
     transform: rotate(1turn);
   }
 }
+
